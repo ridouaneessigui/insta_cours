@@ -85,3 +85,11 @@ class PagesController extends Controller
     Home
 @endsection
 ```
+##### LA CREATION D UNE BASE DE DONNEE
+![img3](cree.JPG)
+
+ creation model
+
+```BASH 
+php artisan make:model Produit -m
+```
