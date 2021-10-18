@@ -10,6 +10,6 @@
 ##### web.php
 ``` PHP
 Route::get('/apropos/{nom}/{id}', function ($nom,$id) {
-    // return view('welcome');
+    // return view('welcome'); //resources/views/welcome.blade.php
     return '<h1>mon nom est '.$nom.' et mon id est '.$id.'</h1>';
  }); ```
