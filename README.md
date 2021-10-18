@@ -40,3 +40,4 @@ class PagesController extends Controller
                  }                
 }
 ```
+ - ######  Blade Templates
