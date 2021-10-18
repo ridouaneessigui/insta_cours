@@ -17,8 +17,8 @@ Route::get('/apropos/{nom}/{id}', function ($nom,$id) {
 ![img2](Ajouter_des_pages_manuelle.JPG)
 
 
-``` Bash
-php artisan make:controller PagesController
+``` console
+foo@bar:~$php artisan make:controller PagesController
 ```
 ``` PHP
 #ETAPE 1 dans web.php
@@ -85,11 +85,17 @@ class PagesController extends Controller
     Home
 @endsection
 ```
-##### LA CREATION D UNE BASE DE DONNEE
+- ###### LA CREATION D UNE BASE DE DONNEE
 ![img3](cree.JPG)
 
- creation model
+- ###### creation model
 
-```BASH 
-php artisan make:model Produit -m
+```console 
+foo@bar:~$php artisan make:model Produit -m
+```
+- ###### fixe chaine de caractere
+![img3](fixe.JPG)
+
+```console 
+foo@bar:~$php artisan migrate
 ```
