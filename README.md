@@ -12,4 +12,6 @@
 Route::get('/apropos/{nom}/{id}', function ($nom,$id) {
     // return view('welcome'); //resources/views/welcome.blade.php
     return '<h1>mon nom est '.$nom.' et mon id est '.$id.'</h1>';
- }); ```
+ });
+```
+![img2](Ajouter_des_pages_manuelle.JPG)

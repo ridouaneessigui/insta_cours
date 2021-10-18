@@ -14,10 +14,15 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-   // return view('welcome');
-   return '<h1>Bonjour</h1>';
+   return view('welcome');
 });
-Route::get('/apropos/{nom}/{id}', function ($nom,$id) {
-    // return view('welcome');
-    return '<h1>mon nom est '.$nom.' et mon id est '.$id.'</h1>';
- });
+
+Route::get('/apropos', function () {
+   return view('/pages/aprops');
+});
+Route::get('/home', function () {
+   return view('./pages/home');
+});
+Route::get('/service', function () {
+   return view('./pages/service');
+});
