@@ -1,4 +1,8 @@
-@include ('Layouts.app')
-<div class="jumbotron">
-    <h1>Welcome to the laravel 7.X project</h1>
-</div>
+@extends ('Layouts.app')
+
+@section('titre')
+    A PROPOS 
+@endsection
+@section('contenu')
+<h1>Welcome to the about page</h1>
+@endsection

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Laravel 7.X</title>
+  
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -12,8 +12,9 @@
   
     @include ('inc.navbar')
     <div class="container">
+      {{-- START content --}}
     @yield('contenu')
+    {{-- END content --}}
     </div>
-
 </body>
 </html>

@@ -1,3 +1,10 @@
-@include ('Layouts.app')
+@extends ('Layouts.app')
 
-<h1>Welcome to the about page</h1>
+@section('titre')
+    Home
+@endsection
+@section('contenu')
+<div class="jumbotron">
+    <h1>Welcome to the laravel 7.X project</h1>
+ </div>
+@endsection

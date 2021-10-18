@@ -69,4 +69,19 @@ class PagesController extends Controller
 <div class="jumbotron">
     <h1>Welcome to the laravel 7.X project</h1>
 </div>
+#ou bien
+@extends ('Layouts.app')
+
+@section('contenu')
+ <div class="jumbotron">
+    <h1>Welcome to the laravel 7.X project</h1>
+ </div>
+@endsection
+
+#####app.blade.php
+<title>@yield('titre')</title>
+####Home.blade.php
+@section('titre')
+    Home
+@endsection
 ```
