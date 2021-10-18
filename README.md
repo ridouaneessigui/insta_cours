@@ -15,3 +15,28 @@ Route::get('/apropos/{nom}/{id}', function ($nom,$id) {
  });
 ```
 ![img2](Ajouter_des_pages_manuelle.JPG)
+
+
+``` Bash
+php artisan make:controller PagesController
+```
+``` PHP
+#ETAPE 1 dans web.php
+Route::get('/service', 'PagesController@service');
+Route::get('/home', 'PagesController@home');
+Route::get('/apropos', 'PagesController@apropos');
+#ETAPE 2 dans pagecontroller
+class PagesController extends Controller
+{
+    public function service () {
+    return view('pages.service');
+        }
+
+        public function apropos () {
+            return view('pages.apropos');
+                }
+        public function home () {
+          return view('pages.home');
+                 }                
+}
+```

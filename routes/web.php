@@ -17,12 +17,6 @@ Route::get('/', function () {
    return view('welcome');
 });
 
-Route::get('/apropos', function () {
-   return view('/pages/aprops');
-});
-Route::get('/home', function () {
-   return view('./pages/home');
-});
-Route::get('/service', function () {
-   return view('./pages/service');
-});
+Route::get('/service', 'PagesController@service');
+Route::get('/home', 'PagesController@home');
+Route::get('/apropos', 'PagesController@apropos');
