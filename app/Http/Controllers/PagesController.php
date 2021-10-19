@@ -28,4 +28,8 @@ class PagesController extends Controller
                  public function creer () {
                     return view('pages.creer');
                         }
+                   public function create (Request $request) {
+                     print('Le nom du produit est:' . '<h1>' . $request->prix_produit . '<h1>');
+                         }
+
 }

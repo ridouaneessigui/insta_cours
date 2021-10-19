@@ -22,3 +22,4 @@ Route::get('/home', 'PagesController@home');
 Route::get('/apropos', 'PagesController@apropos');
 Route::get('/show/{id}', 'PagesController@show');
 Route::get('/creer','PagesController@creer');
+Route::get('/saveproduct','PagesController@create');
