@@ -1,19 +1,27 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Produit;
 use Illuminate\Http\Request;
-
+use DB;
 class PagesController extends Controller
 {
     public function service () {
-    return view('pages.service');
+     return view('pages.service');
         }
-
         public function apropos () {
             return view('pages.apropos');
                 }
         public function home () {
-          return view('pages.home');
-                 }                
+            $produits=DB::table('produits')
+            ->paginate(1);
+            
+          return view('pages.home') ->with('produits',$produits);
+                 }            
+    public function show ($id) {
+       $produit =DB::table('produits')
+       ->where('id',$id)
+       ->first();
+       return view('pages.show')->with('produit',$produit);
+                 }
 }

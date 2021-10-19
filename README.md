@@ -156,4 +156,4 @@ $produits = DB::table('produits')
 ```
 
 
-
+![imgT](1.JPG)   ![imgT](2.JPG)
