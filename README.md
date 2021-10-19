@@ -99,3 +99,22 @@ foo@bar:~$php artisan make:model Produit -m
 ```console 
 foo@bar:~$php artisan migrate
 ```
+
+
+## Tinker pour les interfaces graphique
+
+- ###### Ajouter dans les columns
+```console 
+PS C:\xampp\htdocs\Cours> php artisan tinker       
+Psy Shell v0.10.9 (PHP 7.4.9 — cli) by Justin Hileman
+=> 0
+>>> $produit = new App\Produit();
+=> App\Produit {#4278}
+>>> $produit ->produit_prix = 120
+=> 120
+>>> $produit ->save();
+=> true
+>>>
+```
+
+
