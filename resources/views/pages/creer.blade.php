@@ -3,7 +3,6 @@
 @section('titre')
     Création
 @endsection
-
 @section('contenu')
         <form action="{{url('/saveproduct')}}"
             method="POST" class="for-horizontal">
