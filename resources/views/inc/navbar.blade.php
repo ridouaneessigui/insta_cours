@@ -9,5 +9,8 @@
                 <li><a href="{{URL::to('/apropos')}}">About</a></li>
                 <li><a href="{{URL::to('/service')}}">Services</a></li>
             </ul>
+            <ul class="nav navbar-nav navbar-right">
+                        <li><a href="{{URL::to('/creer')}}">Noveau Produit</a></li>
+            </ul>
         </div>
     </nav>

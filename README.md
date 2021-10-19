@@ -165,3 +165,7 @@ $produits = DB::table('produits')
 - Run php artisan key:generate
 - Run php artisan migrate
 - Run php artisan serve
+
+
+
+csrf ./.
