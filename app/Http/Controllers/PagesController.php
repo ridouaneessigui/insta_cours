@@ -19,9 +19,10 @@ class PagesController extends Controller
           return view('pages.home') ->with('produits',$produits);
                  }            
     public function show ($id) {
-       $produit =DB::table('produits')
+       /*$produit =DB::table('produits')
        ->where('id',$id)
-       ->first();
+       ->first();*/
+       $produit=Produit::find($id);
        return view('pages.show')->with('produit',$produit);
                  }
 }

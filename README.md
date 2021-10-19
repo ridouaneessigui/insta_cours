@@ -159,9 +159,9 @@ $produits = DB::table('produits')
 ![imgT](1.JPG)   ![imgT](2.JPG)
 
 
-Copy .env.example file to .env
-Edit database credentials in .env
-Run composer install
-Run php artisan key:generate
-Run php artisan migrate
-Run php artisan serve
+- Copy .env.example file to .env
+- Edit database credentials in .env
+- Run composer install
+- Run php artisan key:generate
+- Run php artisan migrate
+- Run php artisan serve
