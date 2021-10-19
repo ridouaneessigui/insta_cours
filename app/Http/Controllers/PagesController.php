@@ -25,4 +25,7 @@ class PagesController extends Controller
        $produit=Produit::find($id);
        return view('pages.show')->with('produit',$produit);
                  }
+                 public function creer () {
+                    return view('pages.creer');
+                        }
 }
