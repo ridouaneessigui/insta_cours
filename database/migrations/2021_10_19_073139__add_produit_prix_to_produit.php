@@ -27,7 +27,7 @@ class AddProduitPrixToProduit extends Migration
     public function down()
     {
         Schema::table('produits', function (Blueprint $table) {
-            //
+            
         });
     }
 }
