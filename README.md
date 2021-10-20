@@ -202,6 +202,6 @@ composer require laravelcollective/html
 ```
 ```console
 php artisan route:list
-php artisan make:contoller Product1 --resources
+php artisan make:controller Product1 --resource
 ```
 ![img](AA.png)

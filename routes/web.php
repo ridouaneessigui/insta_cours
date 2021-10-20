@@ -23,3 +23,5 @@ Route::get('/apropos', 'PagesController@apropos');
 Route::get('/show/{id}', 'PagesController@show');
 Route::get('/creer','PagesController@creer');
 Route::post('/saveproduct','PagesController@create');
+Route::resource('product', 'product1');
+
