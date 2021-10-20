@@ -200,4 +200,8 @@ Ajouter libraire ckeditor Ou bien  tinymce
 ```console
 composer require laravelcollective/html  
 ```
+```console
+php artisan route:list
+php artisan make:contoller Product1 --resources
+```
 ![img](AA.png)

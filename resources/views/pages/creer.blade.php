@@ -15,5 +15,5 @@
                 {{Form::textarea('product_description','',['id'=>'editor','placeholder'=>'Product description','class'=>'from-control'])}}
             </div>
             {{Form::submit('Add Product',['class'=>'btn btn-primary'])}}
-        {!!Form::close() !!}
+        {!! Form::close() !!}
 @endsection
