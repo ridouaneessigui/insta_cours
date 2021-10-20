@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
 </head>
 <body>
   
@@ -16,5 +17,13 @@
     @yield('contenu')
     {{-- END content --}}
     </div>
+    <script src="https://cdn.ckeditor.com/ckeditor5/16.0.0/classic/ckeditor.js"></script>
+    <script>
+    ClassicEditor
+    .create(document.querySelector('#editor'))
+    .catch(error=>{
+        console.error(error);
+    });
+</script>
 </body>
 </html>

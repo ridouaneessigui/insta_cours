@@ -25,11 +25,19 @@ class PagesController extends Controller
        $produit=Produit::find($id);
        return view('pages.show')->with('produit',$produit);
                  }
-                 public function creer () {
+        public function creer () {
                     return view('pages.creer');
-                        }
-                   public function create (Request $request) {
-                     print('Le nom du produit est:' . '<h1>' . $request->prix_produit . '<h1>');
-                         }
+                    }
+         public function create (Request $request) {
+                $this->validate($request,['product_prix'=>'required',
+                           'product_description'=>'required']);
+             $produit = New Produit();
+             $produit->produit_prix = $request->product_prix;
+             $produit->description = $request->product_description;
+             $produit->save();
+             
+             session()->put(' message ' , ' le produit ' .$request->produit_prix. ' a ete insere avec succes ');
+             return redirect('/creer');
+                 }
 
 }
