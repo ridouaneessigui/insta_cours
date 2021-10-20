@@ -4,18 +4,16 @@
     Création
 @endsection
 @section('contenu')
-        <form action="{{url('/saveproduct')}}"
-            method="POST" class="for-horizontal">
+        {!! From::open(['action'=>'ProductController@saveproduct','methode'=>'POST','class'=>'form-horizontal']) !!}
             <input type="hidden" name="_token" value="{{ csrf_token() }}">
             <div class="form-group">
-                <label for="">Product Price</label>
-                <input type="number" name="product_prix" placeholder="Product Price" class="form-control">
+                {{From::label('','Product Price')}}
+                {{From::number('product_prix','',['placeholder'=>'Product Price','class'=>'from-control'])}}
             </div>
             <div class="form-group">
-                <label for="">Product Description</label>
-                <textarea name="product_description" placeholder="Product Description" class="form-control" id="editor" cols="30" rows="10"></textarea>
+                {{From::label('','Product description')}}
+                {{From::textarea('product_description','',['id'=>'editor','placeholder'=>'Product description','class'=>'from-control'])}}
             </div>
-            <input type="submit" value="Create" class="btn btn-primary">
-        </form>
-
+            {{From::submit('Add Product',['class'=>'btn btn-primary'])}}
+        {!!From::close() !!}
 @endsection

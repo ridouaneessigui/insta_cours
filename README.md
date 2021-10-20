@@ -1,12 +1,12 @@
-![img](http://naimiweb.com/assets/img/article/laravel.png?ver=003)
+![imgKK](http://naimiweb.com/assets/img/article/laravel.png?ver=003)
 ---------------------
 ## installation
 ##### Pour ce Projet 
-- Copy .env.example file to .env
-- Edit database credentials in .env
+- Edit database Produits in .env
 - Run composer install
 - Run php artisan key:generate
 - Run php artisan migrate
+- Dans BD ajouter columne description
 - Run php artisan serve
 
 ##### Required
@@ -200,3 +200,4 @@ Ajouter libraire ckeditor Ou bien  tinymce
 ```console
 composer require laravelcollective/html  
 ```
+![img](Ressigui-banner2.png)
