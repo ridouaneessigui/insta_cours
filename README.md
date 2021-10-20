@@ -1,7 +1,17 @@
-# Laravel Insta V 7.*
+![img](http://naimiweb.com/assets/img/article/laravel.png?ver=003)
 ---------------------
 ## installation
- composer
+##### Pour ce Projet 
+- Copy .env.example file to .env
+- Edit database credentials in .env
+- Run composer install
+- Run php artisan key:generate
+- Run php artisan migrate
+- Run php artisan serve
+
+##### Required
+   composer
+   php >= 7.2
 ## config
  - local host 
   ![img](config1.JPG)
@@ -159,18 +169,34 @@ $produits = DB::table('produits')
 ![imgT](1.JPG)   ![imgT](2.JPG)
 
 
-- Copy .env.example file to .env
-- Edit database credentials in .env
-- Run composer install
-- Run php artisan key:generate
-- Run php artisan migrate
-- Run php artisan serve
-
-
-
 csrf ./.
 
 
 
 
-termine le projet Aujourd'hui
+- // termine le projet Aujourd'hui j arrive a regle le probleme 
+```PHP
++ petite modification app.blade.php
+Ajouter libraire ckeditor Ou bien  tinymce
+--------- Pagescontroller.php
+ public function creer () {
+                    return view('pages.creer');
+                    }
+         public function create (Request $request) {
+                $this->validate($request,['product_prix'=>'required',
+                           'product_description'=>'required']);
+             $produit = New Produit();
+             $produit->produit_prix = $request->product_prix;
+             $produit->description = $request->product_description;
+             $produit->save();
+             
+             session()->put(' message ' , ' le produit ' .$request->produit_prix. ' a ete insere avec succes ');
+             return redirect('/creer');
+                 }
+
+```
+## ![imgT](https://laravelcollective.com/img/logo.png)
+
+```console
+composer require laravelcollective/html  
+```
