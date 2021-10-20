@@ -4,16 +4,16 @@
     Création
 @endsection
 @section('contenu')
-        {!! From::open(['action'=>'ProductController@saveproduct','methode'=>'POST','class'=>'form-horizontal']) !!}
+        {!! Form::open(['action'=>'PagesController@saveproduct','methode'=>'POST','class'=>'form-horizontal']) !!}
             <input type="hidden" name="_token" value="{{ csrf_token() }}">
             <div class="form-group">
-                {{From::label('','Product Price')}}
-                {{From::number('product_prix','',['placeholder'=>'Product Price','class'=>'from-control'])}}
+                {{Form::label('','Product Price')}}
+                {{Form::number('product_prix','',['placeholder'=>'Product Price','class'=>'from-control'])}}
             </div>
             <div class="form-group">
-                {{From::label('','Product description')}}
-                {{From::textarea('product_description','',['id'=>'editor','placeholder'=>'Product description','class'=>'from-control'])}}
+                {{Form::label('','Product description')}}
+                {{Form::textarea('product_description','',['id'=>'editor','placeholder'=>'Product description','class'=>'from-control'])}}
             </div>
-            {{From::submit('Add Product',['class'=>'btn btn-primary'])}}
-        {!!From::close() !!}
+            {{Form::submit('Add Product',['class'=>'btn btn-primary'])}}
+        {!!Form::close() !!}
 @endsection
